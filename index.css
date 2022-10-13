@@ -1,0 +1,95 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body{
+    background-image: url(./images/b-ball\ image.webp);
+}
+body::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: rgba(0, 61, 181, 0.6);
+	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+.board{
+    background-color: #101630;
+  width: 50vw;
+  margin: auto;
+  padding: 8% 8% 5% 8%;
+  margin-top: 5%;
+  border-radius: 12px;
+  text-align: center;
+}
+.flex-board {
+  display: flex;
+  background-color: #101630;
+  justify-content: space-between;
+  gap: 16%;
+}
+h1 {
+  font-family: "Verdana Pro SemiBold", sans-serif;
+  font-size: calc(16px + 4vw);
+  font-weight: 700;
+  text-align: center;
+  color: #eeeeee;
+}
+.display {
+    font-family: "Cursed Timer ULiL", sans-serif;
+    font-size: calc(16px + 12vw);
+    font-weight: 400;
+    text-align: center;
+    background-color: black;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    color: #f94f6d;
+    padding: 10%;
+    border-radius: 12px;
+    
+}
+#home{
+    width: 100%;
+    text-align: center;
+}
+#guest{
+  width: 100%;
+  text-align: center;
+}
+button {
+    font-family: Cursed Timer ULiL;
+    font-size: calc(6px + 2vw);
+    font-weight: 400;
+    color: #9AABD8;
+    text-align: center;
+    background-color: #101630;
+    border: 4px solid #9AABD8;
+    border-radius: 8px;
+    padding: 7%;
+}
+button:active{
+    font-size: calc(6px + 1vw);
+}
+.flex-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+    width: 100%;
+}
+#reset{
+    padding: 2% 6% 2% 6%;
+    margin-top: 8%;
+}
+#reset:active{
+    background-color: #000000;
+    font-size: calc(6px + 2vw);
+}
+@media only screen and (max-width: 850px){
+    .board{
+        width: 75vw;
+     margin-top: 44%;
+    }
+}

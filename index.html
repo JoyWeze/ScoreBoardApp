@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>ScoreBoard App</title>
+    <link rel="stylesheet" href="./index.css"/>
+    <link href="http://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/verdana-pro-cond" rel="stylesheet">
+                
+                
+</head>
+<body>
+    <div class="board">
+        <div class="flex-board">
+            <div id="home">
+                <h1>HOME</h1>
+                <p class="display" id="home-score">0</p>
+                <div class="flex-buttons">
+                    <button id="plus-one" onclick="homeAddOne()">+1</button>
+                    <button id="plus-two" onclick="homeAddTwo()">+2</button>
+                    <button id="plus-three" onclick="homeAddThree()">+3</button>
+                </div>
+            </div>
+            <div id="guest">
+                <h1>GUEST</h1>
+                <p class="display" id="guest-score">0</p>
+                <div class="flex-buttons">
+                    <button  id="plus-one" onclick="guestAddOne()" >+1</button>
+                    <button id="plus-two" onclick="guestAddTwo()">+2</button>
+                    <button  id="plus-three" onclick="guestAddThree()">+3</button>
+                </div>
+            </div>
+        </div>
+        <button id="reset" onclick="reset()">RESET</button>
+    </div>
+ <script src="./index.js"></script> 
+</body>
+</html>
